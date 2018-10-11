@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:paddingBottom="10dp" />
+
+    <Button
+        android:id="@+id/addition"
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/quantity"
+        android:text="+"
+        android:onClick="increment"
+        />
+       <TextView
+           android:id="@+id/number"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0"
+           android:paddingLeft="20dp"
+           android:paddingTop="30dp"
+           android:paddingBottom="30dp"
+       />
+       <Button
+           android:layout_height="45dp"
+           android:layout_width="45dp"
+           android:layout_marginLeft="20dp"
+           android:layout_below="@id/quantity"
+           android:text="-"
+           android:onClick="decrement"
+           />
+       <TextView
+           android:id="@+id/price"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Price"
+           android:paddingLeft="0dp"
+           android:paddingTop="20dp"
+           android:paddingBottom="30dp"
+           />
+       <TextView
+           android:id="@+id/dollar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="$0"
+           android:paddingLeft="20dp"
+           android:paddingTop="20dp"
+           android:paddingBottom="30dp"
+           />
+       <Button
+           android:layout_height="50dp"
+           android:layout_width="100dp"
+           android:layout_marginLeft="20dp"
+           android:text="Order"
+           android:onClick="submitOrder"
+           />
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
