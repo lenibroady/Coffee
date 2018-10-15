@@ -52,6 +52,6 @@ public void increment(View view){
     }
     private void displayprice() {
         TextView quantityTextView = (TextView) findViewById(R.id.dollar);
-        quantityTextView.setText("$" + total*5);
+        quantityTextView.setText("Your total order is: $" + total*5);
     }
 }
